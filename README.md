@@ -3,6 +3,63 @@
 ## Overview
 This project is a *Social Media Analytics Web Application* built using *Vite + React* for the frontend. It is designed to provide real-time insights into user engagement on a social media platform. The backend microservice is built using a backend framework of choice, which processes and serves analytical data using APIs.
 
+## Project File Architecture
+```
+creating multiple files at once :
+for %i in (file1.txt file2.js .env config.json) do type nul > %i
+
+
+📦 22054011
+├── 📂 backend
+│   ├── 📂 controllers
+│   │   ├── userController.js
+│   │   ├── postController.js
+│   │   ├── commentController.js
+│   ├── 📂 models
+│   │   ├── userModel.js
+│   │   ├── postModel.js
+│   │   ├── commentModel.js
+│   ├── 📂 routes
+│   │   ├── userRoutes.js
+│   │   ├── postRoutes.js
+│   │   ├── commentRoutes.js
+│   ├── 📂 services
+│   │   ├── apiService.js
+│   ├── 📂 config
+│   │   ├── dbConfig.js
+│   ├── 📂 middleware
+│   │   ├── authMiddleware.js
+│   ├── server.js
+|   |──📜 package.json
+├── 📂 frontend
+│   ├── 📂 src
+│   │   ├── 📂 assets
+│   │   │   ├── logo.png
+│   │   ├── 📂 components
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── UserCard.jsx
+│   │   │   ├── PostCard.jsx
+│   │   │   ├── CommentCard.jsx
+│   │   ├── 📂 pages
+│   │   │   ├── Home.jsx
+│   │   │   ├── TopUsers.jsx
+│   │   │   ├── TrendingPosts.jsx
+│   │   │   ├── Feed.jsx
+│   │   ├── 📂 services
+│   │   │   ├── api.js
+│   │   ├── 📂 context
+│   │   │   ├── DataContext.js
+│   │   ├── 📂 styles
+│   │   │   ├── global.css
+│   │   ├── main.jsx
+│   │   ├── App.jsx
+│   ├── 📂 public
+│   │   ├── index.html
+├── 📜 vite.config.js
+├── 📜 README.md
+
+```
 ## Features
 1. *Top Users*
    - Displays the top five users with the highest number of posts.
