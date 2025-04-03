@@ -9,14 +9,14 @@ const App = () => {
     return (
         <div className="min-h-screen">
             <Navbar />
-            <Header />
+            {/* <Header />
             <div className="flex">
                 <Sidebar />
                 <main className="flex-1 p-4">
                     <Card title="Welcome" content="This is your social media analytics dashboard." />
                 </main>
             </div>
-            <Footer />
+            <Footer /> */}
         </div>
     );
 };
